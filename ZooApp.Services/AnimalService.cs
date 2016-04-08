@@ -22,9 +22,9 @@ namespace ZooApp.Services
                 ViewAnimal viewAnimal = new ViewAnimal()
                 {
                     Id = animal.Id,
-                    Quantity = animal.Quantity,
+                    //Quantity = animal.Quantity,
                     Origin = animal.Origin,
-                    Food = animal.Food,
+                    //Food = animal.Food,
                     Name = animal.Name
                 };
                 listofViewAnimals.Add(viewAnimal);
@@ -37,8 +37,8 @@ namespace ZooApp.Services
             Animal animal = adbContext.Animals.Find(id);
             return new ViewAnimal()
             {
-                Food = animal.Food,
-                Quantity = animal.Quantity,
+                //Food = animal.Food,
+                //Quantity = animal.Quantity,
                 Origin = animal.Origin,
                 Name = animal.Name,
                 Id = animal.Id
