@@ -53,13 +53,9 @@
     <Compile Include="Migrations\201604021445400_InitialCreate.Designer.cs">
       <DependentUpon>201604021445400_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201604081858462_AnimalFood.cs" />
-    <Compile Include="Migrations\201604081858462_AnimalFood.Designer.cs">
-      <DependentUpon>201604081858462_AnimalFood.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604081943027_AnimalFood1.cs" />
-    <Compile Include="Migrations\201604081943027_AnimalFood1.Designer.cs">
-      <DependentUpon>201604081943027_AnimalFood1.cs</DependentUpon>
+    <Compile Include="Migrations\201604081952176_AnimalFood.cs" />
+    <Compile Include="Migrations\201604081952176_AnimalFood.Designer.cs">
+      <DependentUpon>201604081952176_AnimalFood.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -73,11 +69,8 @@
     <EmbeddedResource Include="Migrations\201604021445400_InitialCreate.resx">
       <DependentUpon>201604021445400_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604081858462_AnimalFood.resx">
-      <DependentUpon>201604081858462_AnimalFood.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604081943027_AnimalFood1.resx">
-      <DependentUpon>201604081943027_AnimalFood1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201604081952176_AnimalFood.resx">
+      <DependentUpon>201604081952176_AnimalFood.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

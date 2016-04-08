@@ -13,7 +13,7 @@ namespace ZooApp.Models.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201604081858462_AnimalFood"; }
+            get { return "201604081952176_AnimalFood"; }
         }
         
         string IMigrationMetadata.Source
