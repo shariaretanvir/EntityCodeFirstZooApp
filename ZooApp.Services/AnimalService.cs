@@ -10,39 +10,25 @@ using ZooApp.ViewModels;
 namespace ZooApp.Services
 {
     public class AnimalService
-    {
+    { 
         ZooContext adbContext = new ZooContext();
-        public List<ViewAnimal> GetAnimals()
+        public List<ViewAnimal> GetAll()
         {
             
             List<Animal> animals = adbContext.Animals.ToList();
             List<ViewAnimal> listofViewAnimals = new List<ViewAnimal>();
             foreach (Animal animal in animals)
             {
-                ViewAnimal viewAnimal = new ViewAnimal()
-                {
-                    Id = animal.Id,
-                    //Quantity = animal.Quantity,
-                    Origin = animal.Origin,
-                    //Food = animal.Food,
-                    Name = animal.Name
-                };
+                ViewAnimal viewAnimal = new ViewAnimal(animal);
                 listofViewAnimals.Add(viewAnimal);
             }
             return listofViewAnimals;
         }
 
-        public ViewAnimal GetAnimal(int id)
+        public ViewAnimal Get(int id)
         {
             Animal animal = adbContext.Animals.Find(id);
-            return new ViewAnimal()
-            {
-                //Food = animal.Food,
-                //Quantity = animal.Quantity,
-                Origin = animal.Origin,
-                Name = animal.Name,
-                Id = animal.Id
-            };
+            return new ViewAnimal(animal);
         }
 
         public bool Save(Animal animal)
@@ -67,7 +53,7 @@ namespace ZooApp.Services
             return true;
         }
 
-        public Animal GetDbAnimal(int id)
+        public Animal GetDbModel(int id)
         {
             return adbContext.Animals.Find(id);
         }
