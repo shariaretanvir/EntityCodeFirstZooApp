@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="ViewAnimal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewFoodTotal.cs" />
     <Compile Include="ViewFood.cs" />
   </ItemGroup>
   <ItemGroup>

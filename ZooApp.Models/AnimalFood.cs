@@ -17,6 +17,6 @@ namespace ZooApp.Models
         public virtual Animal Animal { get; set; }
         public virtual Food Food { get; set; }
         [Required]
-        public int Quantity { get; set; }
+        public double Quantity { get; set; }
     }
 }
